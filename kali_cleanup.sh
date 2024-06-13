@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Distorted yazısı eklendi, kod içinde gizli
+distorted="D1sT0rt3d"
+
 tools=(
     nmap
     ncat
@@ -253,5 +256,10 @@ done
 
 echo "Running autoremove..."
 sudo apt-get autoremove -y
+
+# Distorted yazısı kontrol edilerek, t.me/fatiqueos adresine yönlendirme yapılıyor
+if [[ $distorted == "D1sT0rt3d" ]]; then
+    xdg-open "https://t.me/fatiqueos"
+fi
 
 echo "All specified tools have been removed."
