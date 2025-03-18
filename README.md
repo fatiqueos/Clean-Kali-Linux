@@ -1,16 +1,39 @@
-Bu bash script, Kali Linux üzerinde bulunan çeşitli siber güvenlik araçlarını kaldırmak için tasarlanmıştır. Script, belirli bir listede yer alan araçları sistemden kaldırmak için döngü kullanmaktadır. Daha sonra gereksiz paketlerin temizlenmesi için "autoremove" komutu çalıştırılmaktadır. Bu işlem sonucunda, Kali Linux üzerindeki siber güvenlik araçları sistemden kaldırılmış olacaktır.
+# Kali Cleanup Script  
 
-Kullanım Talimatları:
+## Description  
 
-1. Script'i indirin veya kopyalayın.
-2. Terminali açın ve script'in bulunduğu dizine gidin.
-3. Script'i çalıştırılabilir hale getirmek için aşağıdaki komutu kullanın:
+This Bash script is designed to remove various cybersecurity tools pre-installed on **Kali Linux**. It iterates through a predefined list of tools and uninstalls them from the system. Afterward, it runs the `autoremove` command to clean up unnecessary dependencies, ensuring a streamlined and lightweight system.  
 
-- chmod +x kali_cleanup.sh
+## Usage Instructions  
 
-Script'i çalıştırmak için aşağıdaki komutu kullanın:
+### 1. Download or Copy the Script  
+Ensure you have the script saved on your system.  
 
-- ./kali_cleanup.sh
+### 2. Open Terminal and Navigate to the Script Directory  
+Use the `cd` command to move to the directory where the script is located.  
 
-Script çalıştırıldığında, sistemdeki siber güvenlik araçları belirtilen listeden kaldırılacaktır. Gereksiz paketlerin temizlenmesi için "autoremove" komutu otomatik olarak çalıştırılacaktır.
-Not: Bu script'in kullanımı sonucunda, sistemdeki siber güvenlik araçları kalıcı olarak kaldırılacaktır. Bu nedenle dikkatli olunması önemlidir.
+### 3. Make the Script Executable  
+Run the following command to grant execution permissions:  
+
+```bash
+chmod +x kali_cleanup.sh
+```
+
+### 4. Run the Script  
+Execute the script using the command:  
+
+```bash
+./kali_cleanup.sh
+```
+
+Once executed, the script will begin removing the listed cybersecurity tools and perform system cleanup using `autoremove`.  
+
+## ⚠️ Important Notice  
+
+- This script **permanently** removes cybersecurity tools from Kali Linux.  
+- Ensure you **do not need** these tools before running the script.  
+- Use it with caution, as reinstallation may require additional setup.  
+
+## License  
+
+This script is open-source and can be modified as needed. Use at your own risk.  
